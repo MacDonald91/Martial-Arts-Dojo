@@ -1,0 +1,50 @@
+/*Begin tablet.*/
+@media screen and (min-width: 641px) {
+
+    
+    
+    figure {
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+
+    main {   
+            box-shadow: 0.5em 0.5em 0.5em black;
+            padding-bottom: 20%;
+            
+        }
+
+
+        
+        /* Hide the left column in tablet mode */
+  .column-left-container {
+     display: none; 
+  }
+
+
+
+    main div .center {
+        padding: 1%;
+        width: 45%;
+        float: left; /*we use one of these float lefts for it to stay within the column */
+        border-right: solid 0.3em black;
+            
+            
+        
+      }
+      
+      main div .right {
+        padding: 1%;
+        width: 20%;
+        display: block;
+        
+        
+    
+        
+        
+    }
+
+    
+    
+        
+}
+/*End tablet.*/
