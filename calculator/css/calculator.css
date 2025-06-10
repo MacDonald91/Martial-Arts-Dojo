@@ -1,0 +1,36 @@
+table {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: black;
+}
+
+
+caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    background-color: black;
+
+}
+
+caption input {
+    text-align: right; /* This puts our 0 on the right.*/
+}
+
+
+th, td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+input {
+    width: 95%;
+    height: 2.5em;
+    font-size: 2em;
+}
+
+
+
