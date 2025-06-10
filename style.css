@@ -1,0 +1,343 @@
+body {
+background-image: linear-gradient(white, black);
+
+}
+
+header img {
+   
+    width: 100%; /*This strecthes the image across the viewport.*/
+    height: auto; /*The height will chnage based on the size of the viewport*/
+    max-width: 500px;
+
+}
+
+
+
+nav {
+    
+    
+    
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li {
+    
+    background-color: black;
+    padding: 1em;
+    /*min-width: 12%;*/
+    margin: .25em;
+    list-style-type: none; /*This removes bullet points*/
+    margin-left: 1em; /* Add spacing to the left */
+        margin-right: 1em; /* Add spacing to the right */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /*This removes the underline from the hyperlink.*/
+    
+}
+
+figure {
+    text-align: center;
+    background-color: white;
+    
+   
+}
+
+figure img {
+   
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+
+main {
+    
+    
+    padding: 1em;
+    background-image: linear-gradient(white, white, grey);
+    
+    border-radius: 1.0em; /*This rounds the corners of elements and is good for making buttons. */
+    margin-bottom: 1em; /*This places some space between elements*/
+    box-shadow: 0.5em 0.5em 0.5em black;
+    
+}
+
+
+/*This was for our 3 column layout begin.*/
+
+
+  main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+
+main div .left {
+    padding: 1em;
+    width: 20%;
+    float: left;
+    
+   
+}
+
+
+main div .center {
+    padding: 1em;
+    width: 45%;
+    float: left;
+    
+}
+
+main div .right {
+    padding: 1em;
+    width: 20%;
+    float: left;
+    /*putting borders here only goes as far as the cloumnn*/
+    
+}
+
+/*3-column layout end.*/
+
+/*.schedule table begin.*/
+.schedule table {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: white;
+
+}
+
+.schedule caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.schedule th, td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.schedule th {
+    background-color: black;
+    color: white;
+}
+/*.schedule table end.*/
+
+#enrollprice {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+}
+
+#enrollprice td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* This is start of caluclator */
+
+
+
+
+
+
+footer {
+    
+   
+     /*This rounds the corners of elements and is good for making buttons. */
+    background-image: linear-gradient(to right, white, grey);
+    border-radius: 1.0em;
+    
+    box-shadow: 0.5em 0.5em 0.5em black;
+    text-align: center;
+    
+}
+
+/*Begin mobile.*/
+@media screen and (max-width: 639px) {
+
+nav ul li {
+    border-radius: 1em;
+}
+
+.tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+
+    /* Hide the left column container on mobile */
+    .column-left-container {
+          display: none; 
+    }
+
+    /* Adjust width of center column to take full width */
+    main div .center {
+        width: 100%;  /* Make center column full width */
+       
+    
+    }
+    
+
+    nav ul li {
+        display: block; /* Stack navigation buttons vertically */
+        width: 100%; /* Make them full width */
+        margin: 0.5em 0; /* Add vertical spacing */
+        text-align: center; /* Center the text */
+        box-sizing: border-box;
+      }
+
+}
+/*End mobile.*/
+
+
+/*Begin tablet.*/
+@media screen and (min-width: 641px) {
+
+    nav ul li {
+        border-radius: 1em;
+        display: inline-block; /*This lists items horizontally and allows them to stretch. */
+        
+        
+        }
+    
+    figure {
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+
+    main {   
+    
+        padding: 1em;    
+        box-shadow: 0.5em 0.5em 0.5em black;
+            padding-bottom: 20%;
+        }
+
+
+        
+        /* Hide the left column in tablet mode */
+  .column-left-container {
+     display: none; 
+  }
+
+
+
+    main div .center {
+        padding: 1%;
+        width: 45%;
+        float: left; /*we use one of these float lefts for it to stay within the column */
+
+            
+            
+        
+      }
+      
+      main div .right {
+        padding: 1%;
+        width: 20%;
+        display: block;
+        
+        
+    
+        
+        
+    }
+
+    
+    
+        
+}
+/*End tablet.*/
+
+
+/*Begin desktop.*/
+@media screen and (min-width: 960px) {
+
+
+    header {
+        background-image: linear-gradient(to right, white, black, black, black);
+        
+
+    }
+    
+    header img {
+        width: auto;
+        height: 5.1em;
+    }
+
+    nav {
+        
+        
+   
+        padding-top: 0.4em;
+        padding-bottom: 0.9em;
+        
+        margin-top: -5.3em; /*This moves the top margin up*/ 
+        float: right;
+       
+    }
+
+   
+
+    
+    main div .center {
+        padding: 1%;
+        width: 45%;
+        float: left;
+        border-left: solid 0.3em black; /*If you put borders on centre column it expands the border from top to bottom*/
+        border-right: solid 0.3em black;
+    
+        
+        
+    }
+    
+
+    nav ul li {
+        display: inline-block;
+        
+        
+    }
+
+    /* Ensure all columns are displayed on desktop */
+    .column-left-container {
+        display: block;
+        
+        
+    }
+
+   
+
+    
+
+    main div .left {
+        display: block;
+        
+    }
+
+    main div .right {
+        display: block;
+        width: 10%;
+    
+        padding: 1%;
+        
+        
+    }
+}
+/*End desktop.*/
