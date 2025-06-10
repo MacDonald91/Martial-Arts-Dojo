@@ -1,4 +1,4 @@
-Website Link - https://macdonald91.github.io/html/
+Website Link - https://macdonald91.github.io/Martial-Arts-Dojo/
 
 Martial Arts Dojo Website
 This repository contains the HTML and CSS code for a basic website representing a Martial Arts Dojo. The website is designed to be responsive, adapting to different screen sizes (mobile, tablet, and desktop).
